@@ -18,15 +18,20 @@ command: io.github.aggalex.Wineglass
 cleanup:
   - '*.a'
   - '*.la'
+  - /*/cmake
+  - /*/pkgconfig
+  - /*/vala*
+  - /*/valadoc*
+  - /bin/vapigen*
   - /cache
   - /include
-  - /lib/cmake
-  - /lib/pkgconfig
+  - /lib/girepository-1.0
   - /lib/systemd
   - /man
   - /share/aclocal
   - /share/devhelp
   - /share/doc
+  - /share/gir-1.0
   - /share/gtk-doc
   - /share/man
 cleanup-commands:
